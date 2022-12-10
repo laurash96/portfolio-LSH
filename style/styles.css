@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Press+Start+2P&family=Titan+One&display=swap');
+body {
+    font-family: 'Fredoka One';
+    background-image: url("../images/blue-bg.jpg");
+  }
+
+.text-color {
+    color: white
+}
+
+.name-div{
+    margin-top: 11em;
+}
+
+.name-div h1{
+    font-size: 3em;
+}
+
+.text-div{
+    font-size: 1.5em
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.t-1{
+    font-size: 0.8em
+}
+
+.t-footer{
+    font-size: 0.3em
+}
+
+@media (max-width: 576px) { 
+    .name-div{
+    margin-top: 11em;
+    color:blueviolet
+}
+.t-1{
+    font-size: 0.4em
+}
+
+.name-div{
+    font-size: 0.6em
+}
+
+body{
+    background-image: url("../images/blue-bg.jpg");
+}
+ }
+    
+
