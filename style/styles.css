@@ -46,9 +46,20 @@ a, a:hover, a:focus, a:active {
     font-size: 0.6em
 }
 
-body{
-    background-image: url("../images/blue-bg.jpg");
-}
  }
     
+ @media (max-width: 380px) { 
+    .name-div{
+    margin-top: 11em;
+    color:blueviolet
+}
+.t-1{
+    font-size: 0.4em
+}
+
+.name-div{
+    font-size: 0.5em
+}
+
+ }
 
