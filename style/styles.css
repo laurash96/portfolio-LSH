@@ -9,13 +9,16 @@ body {
 }
 
 .name-div{
-    margin-top: 11em;
+    margin-top: 20px;
 }
 
 .name-div h1{
     font-size: 3em;
 }
 
+.profile-pic{
+    margin-top: 150px;
+}
 .text-div{
     font-size: 1.5em
 }
@@ -35,7 +38,7 @@ a, a:hover, a:focus, a:active {
 
 @media (max-width: 576px) { 
     .name-div{
-    margin-top: 11em;
+    margin-top: 10px;
     color:blueviolet
 }
 .t-1{
@@ -50,7 +53,7 @@ a, a:hover, a:focus, a:active {
     
  @media (max-width: 380px) { 
     .name-div{
-    margin-top: 11em;
+    margin-top: 50px;
     color:blueviolet
 }
 .t-1{
