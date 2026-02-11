@@ -1,80 +1,456 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Laura Saldarriaga Higuita - Machine Learning Developer, MSc. in Engineering, Electronics Engineer. Professional portfolio with Data Science and ML projects.">
+    <meta name="keywords" content="Machine Learning, Data Science, Engineering, Python, TensorFlow, Portfolio">
+    <meta name="author" content="Laura Saldarriaga Higuita">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Laura Saldarriaga Higuita - Machine Learning Developer">
+    <meta property="og:description" content="Professional Portfolio - Machine Learning Developer | MSc. in Engineering | Electronics Engineer">
+    <meta property="og:image" content="./images/portf.png">
+    <meta property="og:url" content="https://laurash96.github.io/portfolio-LSH/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Laura Saldarriaga Higuita - Machine Learning Developer">
+    <meta name="twitter:description" content="Professional Portfolio - Machine Learning Developer | MSc. in Engineering | Electronics Engineer">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/styles.css" />
-    <link rel="icon" type="image/x-icon" href="./images/portf.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio · Laura S.H</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="icon" type="image/png" href="./images/portf.png">
+    
+    <title>Laura Saldarriaga Higuita - Machine Learning Developer</title>
 </head>
 
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </svg>
+    </button>
+
+    <!-- Language Toggle Button -->
+    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-text">ES</span>
+    </button>
+
     <div class="container">
-        <div class="text-center profile-pic">
-            <img src="./images/IMG_0006.PNG" alt="Profile Image" class="rounded-circle prf-pic">
+        <!-- Hero Section -->
+        <div class="text-center profile-pic fade-in">
+            <img src="./images/IMG_0006.PNG" alt="Laura Saldarriaga Higuita Profile Image" class="rounded-circle prf-pic">
         </div>
-        <div class="name-div text-center">
+        <div class="name-div text-center fade-in">
             <h1 class="text-color">
                 Laura Saldarriaga Higuita
             </h1>
         </div>
-        <div class="text-div text-center text-color">
-            <p class="text-center t-1">MSc. in Engineering | Data Scientist | Electronics Engineer</p>
+        <div class="text-div text-center text-color fade-in">
+            <p class="text-center t-1" data-i18n="subtitle">Machine Learning Developer | MSc. in Engineering | Electronics Engineer</p>
         </div>
-        <div>
-            <div class="justify-content-center row">
-                <div class="m-1"><a href="https://github.com/laurash96" target="_blank">
-                        <button type="button" class="btn btn-outline-light custom-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.20-.82 2.20-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                            GitHub
-                        </button>
-                    </a></div>
-                <div class="m-1"><a href="https://lookerstudio.google.com/reporting/38bb08c2-1f67-4127-9bdf-3b3549aba98b" target="_blank">
-                        <button type="button" class="btn btn-outline-light custom-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
-                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
-                              </svg>
-                              Looker Studio
-                    </a></div>
-                <div class="m-1"><a href="https://public.tableau.com/app/profile/laurash" target="_blank">
+
+        <!-- About Me Section -->
+        <section class="about-section fade-in">
+            <div class="section-container">
+                <h2 class="section-title text-color">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="section-icon" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
+                    <span data-i18n="about-title">About Me</span>
+                </h2>
+                <p class="about-text text-color" data-i18n="about-text">
+                    I am a professional passionate about Machine Learning and data science, with a background in electronics engineering and a master's degree in engineering. 
+                    I specialize in developing innovative solutions using advanced machine learning techniques and data analysis. 
+                    My goal is to transform data into actionable insights and create models that generate real impact.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section fade-in">
+            <div class="section-container">
+                <h2 class="section-title text-color">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="section-icon" viewBox="0 0 16 16">
+                        <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                    </svg>
+                    <span data-i18n="skills-title">Technical Skills</span>
+                </h2>
+                <div class="skills-grid">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Machine Learning</span>
+                    <span class="skill-badge">Deep Learning</span>
+                    <span class="skill-badge">TensorFlow/Keras</span>
+                    <span class="skill-badge">Scikit-learn</span>
+                    <span class="skill-badge">XGBoost</span>
+                    <span class="skill-badge">Pandas</span>
+                    <span class="skill-badge">NumPy</span>
+                    <span class="skill-badge">Feature Engineering</span>
+                    <span class="skill-badge">ETL Pipelines</span>
+                    <span class="skill-badge" data-i18n="skill-data-analysis">Data Analysis</span>
+                    <span class="skill-badge">Seaborn</span>
+                    <span class="skill-badge">Matplotlib</span>
+                    <span class="skill-badge">Statsmodels</span>
+                    <span class="skill-badge">Looker Studio</span>
+                    <span class="skill-badge">Tableau</span>
+                    <span class="skill-badge">Power BI</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Git/GitHub</span>
+                    <span class="skill-badge">CI/CD</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section fade-in">
+            <div class="section-container">
+                <h2 class="section-title text-color">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="section-icon" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                    </svg>
+                    <span data-i18n="projects-title">Featured Projects</span>
+                </h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title text-color" data-i18n="project1-title">Lead Conversion Classification</h3>
+                            <a href="https://github.com/laurash96/data-clean-feature-eng" target="_blank" class="project-link" aria-label="View project on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description text-color" data-i18n="project1-desc">
+                            Data cleaning and feature engineering for lead conversion prediction. Processed 61K+ leads with Random Forest and XGBoost for feature selection.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">XGBoost</span>
+                            <span class="project-tag">Feature Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title text-color" data-i18n="project2-title">Employee Attrition Prediction</h3>
+                            <a href="https://github.com/laurash96/employee-attrition-prediction" target="_blank" class="project-link" aria-label="View project on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description text-color" data-i18n="project2-desc">
+                            Deep Learning model to predict employee turnover. Compared Logistic Regression, Random Forest, and Neural Networks with SMOTE balancing. Achieved 89.4% accuracy.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">TensorFlow</span>
+                            <span class="project-tag">Keras</span>
+                            <span class="project-tag">SMOTE</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title text-color" data-i18n="project3-title">Traffic Analysis Medellín</h3>
+                            <a href="https://github.com/laurash96/EDA-vehicle-traffic-data-Medellin" target="_blank" class="project-link" aria-label="View project on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description text-color" data-i18n="project3-desc">
+                            EDA of 252K+ vehicle traffic records in Medellín (2017-2020). Applied PCA, seasonal decomposition, and correlation analysis to identify traffic patterns.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">PCA</span>
+                            <span class="project-tag">Time Series</span>
+                            <span class="project-tag">Statsmodels</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title text-color" data-i18n="project4-title">Hospital Order Analytics</h3>
+                            <a href="https://github.com/laurash96/order-data-analysis" target="_blank" class="project-link" aria-label="View project on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description text-color" data-i18n="project4-desc">
+                            Analysis of 68K+ hospital orders with predictive forecasting. Validated CEO hypothesis showing 77.4% reorder rate. Built Linear Regression model with MAPE 40-48%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Forecasting</span>
+                            <span class="project-tag">Linear Regression</span>
+                            <span class="project-tag">Looker Studio</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title text-color" data-i18n="project5-title">Retail ETL & BI Pipeline</h3>
+                            <a href="https://github.com/laurash96/retail-ETL-BI" target="_blank" class="project-link" aria-label="View project on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description text-color" data-i18n="project5-desc">
+                            Complete ETL pipeline processing 23.8M+ retail records. Integrated 4 data sources, performed data cleaning, and created 7+ engineered features for BI dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">ETL</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">Looker Studio</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 6 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title text-color" data-i18n="project6-title">Women Economic Autonomy</h3>
+                            <a href="https://github.com/laurash96/Women-economic-autonomy-2018-MEData" target="_blank" class="project-link" aria-label="View project on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description text-color" data-i18n="project6-desc">
+                            Analysis of 1,572 women in economic empowerment program (Medellín 2018). Data cleaning, transformation of 111 features, and statistical visualizations with Seaborn.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">EDA</span>
+                            <span class="project-tag">Seaborn</span>
+                            <span class="project-tag">Social Impact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section fade-in">
+            <div class="section-container">
+                <h2 class="section-title text-color">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="section-icon" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                    <span data-i18n="contact-title">Contact</span>
+                </h2>
+                <div class="justify-content-center row">
+                    <div class="m-1">
+                        <a href="https://github.com/laurash96" target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="btn btn-outline-light custom-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                GitHub
+                            </button>
+                        </a>
+                    </div>
+                    <div class="m-1">
+                        <a href="https://lookerstudio.google.com/reporting/38bb08c2-1f67-4127-9bdf-3b3549aba98b" target="_blank" rel="noopener noreferrer">
                             <button type="button" class="btn btn-outline-light custom-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
                                     <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
-                                  </svg>
-                                  Tableau
-                        </a></div>
-                <div class="m-1"><a href="https://www.linkedin.com/in/laura-saldarriaga-higuita/" target="_blank">
-                        <button type="button" class="btn btn-outline-light custom-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                            </svg>
-                            LinkedIn
-                        </button>
-                    </a></div>
-                <div class="m-1"><a href="mailto: laura.saldarriagah@gmail.com" target="_blank">
-                        <button type="button" class="btn btn-outline-light custom-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-envelope-at" viewBox="0 0 16 16">
-                                <path
-                                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
-                                <path
-                                    d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
-                            </svg>
-                            Email
-                        </button>
-                    </a></div>
-
+                                </svg>
+                                Looker Studio
+                            </button>
+                        </a>
+                    </div>
+                    <div class="m-1">
+                        <a href="https://public.tableau.com/app/profile/laurash" target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="btn btn-outline-light custom-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                                    <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                                </svg>
+                                Tableau
+                            </button>
+                        </a>
+                    </div>
+                    <div class="m-1">
+                        <a href="https://www.linkedin.com/in/laura-saldarriaga-higuita/" target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="btn btn-outline-light custom-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                                LinkedIn
+                            </button>
+                        </a>
+                    </div>
+                    <div class="m-1">
+                        <a href="mailto:laura.saldarriagah@gmail.com">
+                            <button type="button" class="btn btn-outline-light custom-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                                    <path
+                                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                                </svg>
+                                Email
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content text-color">
+                <p>&copy; 2026 Laura Saldarriaga Higuita. <span data-i18n="footer-rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Translations -->
+    <script>
+        const translations = {
+            en: {
+                'subtitle': 'Machine Learning Developer | MSc. in Engineering | Electronics Engineer',
+                'about-title': 'About Me',
+                'about-text': 'I am a professional passionate about Machine Learning and data science, with a background in electronics engineering and a master\'s degree in engineering. I specialize in building end-to-end data solutions, from ETL pipelines processing millions of records to predictive models optimized for key metrics. My expertise includes deep learning with TensorFlow/Keras, advanced algorithms (XGBoost, Random Forest), and feature engineering. My goal is to transform complex data into actionable insights and create models that generate real business impact.',
+                'skills-title': 'Technical Skills',
+                'skill-data-analysis': 'Data Analysis',
+                'projects-title': 'Featured Projects',
+                'project1-title': 'Lead Conversion Classification',
+                'project1-desc': 'Data cleaning and feature engineering for lead conversion prediction. Processed 61K+ leads with Random Forest and XGBoost for feature selection.',
+                'project2-title': 'Employee Attrition Prediction',
+                'project2-desc': 'Deep Learning model to predict employee turnover. Compared Logistic Regression, Random Forest, and Neural Networks with SMOTE balancing. Achieved 89.4% accuracy.',
+                'project3-title': 'Traffic Analysis Medellín',
+                'project3-desc': 'EDA of 252K+ vehicle traffic records in Medellín (2017-2020). Applied PCA, seasonal decomposition, and correlation analysis to identify traffic patterns.',
+                'project4-title': 'Hospital Order Analytics',
+                'project4-desc': 'Analysis of 68K+ hospital orders with predictive forecasting. Validated CEO hypothesis showing 77.4% reorder rate. Built Linear Regression model with MAPE 40-48%.',
+                'project5-title': 'Retail ETL & BI Pipeline',
+                'project5-desc': 'Complete ETL pipeline processing 23.8M+ retail records. Integrated 4 data sources, performed data cleaning, and created 7+ engineered features for BI dashboard.',
+                'project6-title': 'Women Economic Autonomy',
+                'project6-desc': 'Analysis of 1,572 women in economic empowerment program (Medellín 2018). Data cleaning, transformation of 111 features, and statistical visualizations with Seaborn.',
+                'contact-title': 'Contact',
+                'footer-rights': 'All rights reserved.'
+            },
+            es: {
+                'subtitle': 'Machine Learning Developer | MSc. in Engineering | Electronics Engineer',
+                'about-title': 'Sobre Mí',
+                'about-text': 'Soy una profesional apasionada por el Machine Learning y la ciencia de datos, con formación en ingeniería electrónica y maestría en ingeniería. Me especializo en construir soluciones de datos end-to-end, desde pipelines ETL procesando millones de registros hasta modelos predictivos optimizados para métricas clave. Mi experiencia incluye deep learning con TensorFlow/Keras, algoritmos avanzados (XGBoost, Random Forest) e ingeniería de features. Mi objetivo es transformar datos complejos en insights accionables y crear modelos que generen impacto real en el negocio.',
+                'skills-title': 'Habilidades Técnicas',
+                'skill-data-analysis': 'Análisis de Datos',
+                'projects-title': 'Proyectos Destacados',
+                'project1-title': 'Clasificación de Conversión de Leads',
+                'project1-desc': 'Limpieza de datos e ingeniería de features para predicción de conversión de leads. Procesé 61K+ leads con Random Forest y XGBoost para selección de features.',
+                'project2-title': 'Predicción de Rotación de Empleados',
+                'project2-desc': 'Modelo de Deep Learning para predecir rotación de empleados. Comparé Regresión Logística, Random Forest y Redes Neuronales con balanceo SMOTE. Logré 89.4% de precisión.',
+                'project3-title': 'Análisis de Tráfico Medellín',
+                'project3-desc': 'EDA de 252K+ registros de tráfico vehicular en Medellín (2017-2020). Apliqué PCA, descomposición estacional y análisis de correlación para identificar patrones de tráfico.',
+                'project4-title': 'Análisis de Órdenes Hospitalarias',
+                'project4-desc': 'Análisis de 68K+ órdenes hospitalarias con forecasting predictivo. Validé hipótesis del CEO mostrando 77.4% de tasa de reorden. Construí modelo de Regresión Lineal con MAPE 40-48%.',
+                'project5-title': 'Pipeline ETL & BI Retail',
+                'project5-desc': 'Pipeline ETL completo procesando 23.8M+ registros retail. Integré 4 fuentes de datos, realicé limpieza de datos y creé 7+ features para dashboard de BI.',
+                'project6-title': 'Autonomía Económica de Mujeres',
+                'project6-desc': 'Análisis de 1,572 mujeres en programa de empoderamiento económico (Medellín 2018). Limpieza de datos, transformación de 111 features y visualizaciones estadísticas con Seaborn.',
+                'contact-title': 'Contacto',
+                'footer-rights': 'Todos los derechos reservados.'
+            }
+        };
+
+        let currentLang = 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update language toggle button
+            const langToggle = document.getElementById('langToggle');
+            langToggle.querySelector('.lang-text').textContent = lang === 'en' ? 'ES' : 'EN';
+            
+            // Save preference
+            localStorage.setItem('language', lang);
+        }
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        body.classList.add(currentTheme + '-theme');
+        
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Language toggle functionality
+        const langToggle = document.getElementById('langToggle');
+        
+        langToggle.addEventListener('click', () => {
+            const newLang = currentLang === 'en' ? 'es' : 'en';
+            setLanguage(newLang);
+        });
+
+        // Initialize language
+        const savedLang = localStorage.getItem('language') || 'en';
+        setLanguage(savedLang);
+
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 
 </html>
