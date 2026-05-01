@@ -101,11 +101,38 @@
                     <span class="skill-badge">ETL Pipelines</span>
                     <span class="skill-badge" data-i18n="skill-data-analysis">Data Analysis</span>
                     <span class="skill-badge">Seaborn/Matplotlib</span>
-                    <span class="skill-badge">Looker Studio</span>
+                    <span class="skill-badge">Gen AI</span>
+                    <span class="skill-badge">Data Studio</span>
                     <span class="skill-badge">Tableau</span>
                     <span class="skill-badge">Power BI</span>
                     <span class="skill-badge">SQL</span>
                     <span class="skill-badge">Git/GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section fade-in">
+            <div class="section-container">
+                <h2 class="section-title text-color">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="section-icon" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.54-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.54 1.509.231z"/>
+                        <path d="M4 11.794V15l3-1 3 1v-3.206c-.818.216-1.67.216-2.5 0z"/>
+                    </svg>
+                    <span data-i18n="certifications-title">Certifications</span>
+                </h2>
+                <div class="certifications-grid">
+                    <div class="project-card certification-card">
+                        <div class="certification-inner">
+                            <img src="./images/generative_ai_badge.png"
+                                alt="Google Cloud Certified badge: Generative AI Leader"
+                                class="certification-badge-img" width="160" height="160" loading="lazy">
+                            <div class="certification-copy">
+                                <h3 class="project-title certification-title" data-i18n="cert-gcp-genai-name">Generative AI Leader</h3>
+                                <p class="project-description certification-issuer mb-0" data-i18n="cert-gcp-genai-issuer">Google Cloud Certified</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -196,7 +223,7 @@
                         <div class="project-tags">
                             <span class="project-tag">Forecasting</span>
                             <span class="project-tag">Linear Regression</span>
-                            <span class="project-tag">Looker Studio</span>
+                            <span class="project-tag">Data Studio</span>
                         </div>
                     </div>
 
@@ -216,7 +243,7 @@
                         <div class="project-tags">
                             <span class="project-tag">ETL</span>
                             <span class="project-tag">Pandas</span>
-                            <span class="project-tag">Looker Studio</span>
+                            <span class="project-tag">Data Studio</span>
                         </div>
                     </div>
 
@@ -266,24 +293,20 @@
                         </a>
                     </div>
                     <div class="m-1">
-                        <a href="https://lookerstudio.google.com/reporting/38bb08c2-1f67-4127-9bdf-3b3549aba98b" target="_blank" rel="noopener noreferrer">
-                            <button type="button" class="btn btn-outline-light custom-btn">
+                        <button type="button" class="btn btn-outline-light custom-btn" data-toggle="modal" data-target="#dataStudioModal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
                                     <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
                                 </svg>
-                                Looker Studio
-                            </button>
-                        </a>
+                                Data Studio
+                        </button>
                     </div>
                     <div class="m-1">
-                        <a href="https://public.tableau.com/app/profile/laurash" target="_blank" rel="noopener noreferrer">
-                            <button type="button" class="btn btn-outline-light custom-btn">
+                        <button type="button" class="btn btn-outline-light custom-btn" data-toggle="modal" data-target="#tableauModal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
                                     <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
                                 </svg>
                                 Tableau
-                            </button>
-                        </a>
+                        </button>
                     </div>
                     <div class="m-1">
                         <a href="https://www.linkedin.com/in/laura-saldarriaga-higuita/" target="_blank" rel="noopener noreferrer">
@@ -320,10 +343,79 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content text-color">
-                <p>&copy; 2026 Laura Saldarriaga Higuita. <span data-i18n="footer-rights">All rights reserved.</span></p>
+                <p>&copy; <span id="footer-year"></span> Laura Saldarriaga Higuita. <span data-i18n="footer-rights">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
+
+    <!-- Data Studio Modal -->
+    <div class="modal fade theme-modal" id="dataStudioModal" tabindex="-1" role="dialog" aria-labelledby="dataStudioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dataStudioModalLabel">📊 <span data-i18n="data-studio-title">Data Studio</span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted mb-3" data-i18n="data-studio-subtitle">Open each report in a new tab:</p>
+                    <div class="d-flex flex-column">
+                        <a class="btn btn-outline-secondary btn-sm btn-block mb-2 text-left"
+                            href="https://datastudio.google.com/reporting/38bb08c2-1f67-4127-9bdf-3b3549aba98b"
+                            target="_blank" rel="noopener noreferrer">
+                            🛍️ <span data-i18n="data-studio-report-retail">Retail Transaction Report</span>
+                        </a>
+                        <a class="btn btn-outline-secondary btn-sm btn-block text-left"
+                            href="https://datastudio.google.com/reporting/4d4c1ca7-cc6f-47a5-bf72-046ba271fc52"
+                            target="_blank" rel="noopener noreferrer">
+                            📦 <span data-i18n="data-studio-report-order">Order Report</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tableau Modal -->
+    <div class="modal fade theme-modal" id="tableauModal" tabindex="-1" role="dialog" aria-labelledby="tableauModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tableauModalLabel">📈 <span data-i18n="tableau-title">Tableau Public</span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted mb-3" data-i18n="tableau-subtitle">Open each dashboard in a new tab:</p>
+                    <div class="d-flex flex-column">
+                        <a class="btn btn-outline-secondary btn-sm btn-block mb-2 text-left"
+                            href="https://public.tableau.com/views/KingCountyHouseSales_17002736358440/HouseSalesDashboard?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link"
+                            target="_blank" rel="noopener noreferrer">
+                            🏠 <span data-i18n="tableau-dashboard-sales">Sales Dashboard</span>
+                        </a>
+                        <a class="btn btn-outline-secondary btn-sm btn-block text-left"
+                            href="https://public.tableau.com/views/TableaProjectCOVID-19/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link"
+                            target="_blank" rel="noopener noreferrer">
+                            💉 <span data-i18n="tableau-dashboard-covid">COVID-19 Vaccination Dashboard</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (required for modal) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <!-- Translations -->
     <script>
@@ -334,6 +426,9 @@
                 'about-text': 'I am a professional passionate about Machine Learning and data science, with a background in electronics engineering and a master\'s degree in engineering. I specialize in building end-to-end data solutions, from ETL pipelines processing millions of records to predictive models optimized for key metrics. My expertise includes deep learning with TensorFlow/Keras, advanced algorithms (XGBoost, Random Forest), and feature engineering. My goal is to transform complex data into actionable insights and create models that generate real business impact.',
                 'skills-title': 'Technical Skills',
                 'skill-data-analysis': 'Data Analysis',
+                'certifications-title': 'Certifications',
+                'cert-gcp-genai-name': 'Generative AI Leader',
+                'cert-gcp-genai-issuer': 'Google Cloud Certified',
                 'projects-title': 'Featured Projects',
                 'project1-title': 'Lead Conversion Classification',
                 'project1-desc': 'Data cleaning and feature engineering for lead conversion prediction. Processed 61K+ leads with Random Forest and XGBoost for feature selection.',
@@ -348,7 +443,15 @@
                 'project6-title': 'Women Economic Autonomy',
                 'project6-desc': 'Analysis of 1,572 women in economic empowerment program (Medellín 2018). Data cleaning, transformation of 111 features, and statistical visualizations with Seaborn.',
                 'contact-title': 'Contact',
-                'footer-rights': 'All rights reserved.'
+                'footer-rights': 'All rights reserved.',
+                'data-studio-title': 'Data Studio',
+                'data-studio-subtitle': 'Open each report in a new tab:',
+                'data-studio-report-retail': 'Retail Transaction Report',
+                'data-studio-report-order': 'Order Report',
+                'tableau-title': 'Tableau Public',
+                'tableau-subtitle': 'Open each dashboard in a new tab:',
+                'tableau-dashboard-sales': 'Sales Dashboard',
+                'tableau-dashboard-covid': 'COVID-19 Vaccination Dashboard'
             },
             es: {
                 'subtitle': 'Machine Learning Developer | MSc. in Engineering | Electronics Engineer',
@@ -356,6 +459,9 @@
                 'about-text': 'Soy una profesional apasionada por el Machine Learning y la ciencia de datos, con formación en ingeniería electrónica y maestría en ingeniería. Me especializo en construir soluciones de datos end-to-end, desde pipelines ETL procesando millones de registros hasta modelos predictivos optimizados para métricas clave. Mi experiencia incluye deep learning con TensorFlow/Keras, algoritmos avanzados (XGBoost, Random Forest) e ingeniería de features. Mi objetivo es transformar datos complejos en insights accionables y crear modelos que generen impacto real en el negocio.',
                 'skills-title': 'Habilidades Técnicas',
                 'skill-data-analysis': 'Análisis de Datos',
+                'certifications-title': 'Certificaciones',
+                'cert-gcp-genai-name': 'Generative AI Leader',
+                'cert-gcp-genai-issuer': 'Google Cloud Certified',
                 'projects-title': 'Proyectos Destacados',
                 'project1-title': 'Clasificación de Conversión de Leads',
                 'project1-desc': 'Limpieza de datos e ingeniería de features para predicción de conversión de leads. Procesé 61K+ leads con Random Forest y XGBoost para selección de features.',
@@ -370,7 +476,15 @@
                 'project6-title': 'Autonomía Económica de Mujeres',
                 'project6-desc': 'Análisis de 1,572 mujeres en programa de empoderamiento económico (Medellín 2018). Limpieza de datos, transformación de 111 features y visualizaciones estadísticas con Seaborn.',
                 'contact-title': 'Contacto',
-                'footer-rights': 'Todos los derechos reservados.'
+                'footer-rights': 'Todos los derechos reservados.',
+                'data-studio-title': 'Data Studio',
+                'data-studio-subtitle': 'Abre cada reporte en una pestaña nueva:',
+                'data-studio-report-retail': 'Reporte de Transacciones Retail',
+                'data-studio-report-order': 'Reporte de Órdenes',
+                'tableau-title': 'Tableau Public',
+                'tableau-subtitle': 'Abre cada dashboard en una pestaña nueva:',
+                'tableau-dashboard-sales': 'Dashboard de Ventas',
+                'tableau-dashboard-covid': 'Dashboard de Vacunación COVID-19'
             }
         };
 
@@ -426,6 +540,11 @@
         // Initialize language
         const savedLang = localStorage.getItem('language') || 'en';
         setLanguage(savedLang);
+
+        const footerYearEl = document.getElementById('footer-year');
+        if (footerYearEl) {
+            footerYearEl.textContent = new Date().getFullYear().toString();
+        }
 
         // Fade-in animation on scroll
         const observerOptions = {
