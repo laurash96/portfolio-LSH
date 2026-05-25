@@ -92,6 +92,7 @@
                 </h2>
                 <div class="skills-grid">
                     <span class="skill-badge">Python</span>
+                    <span class="skill-badge">FastAPI</span>
                     <span class="skill-badge">Machine Learning</span>
                     <span class="skill-badge">Deep Learning</span>
                     <span class="skill-badge">TensorFlow/Keras</span>
@@ -133,6 +134,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="project-card certification-card">
+                        <div class="certification-inner">
+                            <img src="./images/AWS-Certified-AI-badge.png"
+                                alt="AWS Certified badge: AI Practitioner Foundational"
+                                class="certification-badge-img" width="160" height="160" loading="lazy">
+                            <div class="certification-copy">
+                                <h3 class="project-title certification-title" data-i18n="cert-aws-ai-name">AWS Certified AI Practitioner</h3>
+                                <p class="project-description certification-issuer mb-0" data-i18n="cert-aws-ai-issuer">AWS Certified · Foundational</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -147,6 +159,27 @@
                     <span data-i18n="projects-title">Featured Projects</span>
                 </h2>
                 <div class="projects-grid">
+                    <!-- Project Card 7 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title text-color" data-i18n="project7-title">Road Weather — Aburrá Valley</h3>
+                            <a href="https://github.com/laurash96/road-weather-aburra" target="_blank" class="project-link" aria-label="View project on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.20-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description text-color" data-i18n="project7-desc">
+                            Rain-on-route assistant for Aburrá Valley using SIATA pluviometry. FastAPI backend with Siri Shortcuts integration, multi-modal routing (motorcycle, car, bike, walk), and spoken weather summaries.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">Siri</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                    </div>
+
                     <!-- Project Card 1 -->
                     <div class="project-card">
                         <div class="project-header">
@@ -429,7 +462,11 @@
                 'certifications-title': 'Certifications',
                 'cert-gcp-genai-name': 'Generative AI Leader',
                 'cert-gcp-genai-issuer': 'Google Cloud Certified',
+                'cert-aws-ai-name': 'AWS Certified AI Practitioner',
+                'cert-aws-ai-issuer': 'AWS Certified · Foundational',
                 'projects-title': 'Featured Projects',
+                'project7-title': 'Road Weather — Aburrá Valley',
+                'project7-desc': 'Rain-on-route assistant for Aburrá Valley using SIATA pluviometry. FastAPI backend with Siri Shortcuts integration, multi-modal routing (motorcycle, car, bike, walk), and spoken weather summaries.',
                 'project1-title': 'Lead Conversion Classification',
                 'project1-desc': 'Data cleaning and feature engineering for lead conversion prediction. Processed 61K+ leads with Random Forest and XGBoost for feature selection.',
                 'project2-title': 'Employee Attrition Prediction',
@@ -462,7 +499,11 @@
                 'certifications-title': 'Certificaciones',
                 'cert-gcp-genai-name': 'Generative AI Leader',
                 'cert-gcp-genai-issuer': 'Google Cloud Certified',
+                'cert-aws-ai-name': 'AWS Certified AI Practitioner',
+                'cert-aws-ai-issuer': 'AWS Certified · Foundational',
                 'projects-title': 'Proyectos Destacados',
+                'project7-title': 'Road Weather — Aburrá Valley',
+                'project7-desc': 'Asistente de lluvia en rutas del Valle de Aburrá con datos SIATA. API FastAPI integrable con Atajos de Siri, rutas multi-modo (moto, carro, bici, a pie) y resúmenes hablados del clima.',
                 'project1-title': 'Clasificación de Conversión de Leads',
                 'project1-desc': 'Limpieza de datos e ingeniería de features para predicción de conversión de leads. Procesé 61K+ leads con Random Forest y XGBoost para selección de features.',
                 'project2-title': 'Predicción de Rotación de Empleados',
