@@ -967,3 +967,26 @@ html {
 .container {
     max-width: 1200px;
 }
+
+/* Secondary CTA (cross-links between the ML portfolio and the web-dev page) */
+.secondary-cta {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.9em;
+    opacity: 0.85;
+}
+
+.secondary-cta a {
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px 0 0;
+    font-size: 0.9em;
+    opacity: 0.85;
+}
+
+.back-link a {
+    text-decoration: underline;
+}
