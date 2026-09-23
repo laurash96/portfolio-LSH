@@ -737,6 +737,15 @@ body.light-theme .certification-badge-img {
     margin-bottom: 20px;
 }
 
+.contact-section .section-container {
+    max-width: 480px;
+}
+
+.contact-section .section-title {
+    font-size: 1.4em;
+    justify-content: center;
+}
+
 /* Buttons */
 .custom-btn {
     width: 180px;
