@@ -659,6 +659,17 @@ body.light-theme .certification-badge-img {
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.project-thumb {
+    display: block;
+    width: calc(100% + 40px);
+    margin: -20px -20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 16 / 10;
 }
 
 .project-card:hover {
