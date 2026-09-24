@@ -1010,3 +1010,17 @@ html {
 .back-link a {
     text-decoration: underline;
 }
+
+/* Project subsections (E-commerce & Landing / Events) */
+.subsection-title {
+    font-size: 1.15em;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.2px;
+    margin: 0 0 18px;
+    padding-top: 8px;
+    opacity: 0.85;
+}
+.projects-grid + .subsection-title {
+    margin-top: 40px;
+}
