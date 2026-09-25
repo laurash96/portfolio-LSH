@@ -439,6 +439,67 @@ body.light-theme .theme-modal a.btn:hover {
     letter-spacing: 0.5px;
 }
 
+/* Web Dev Floating Button */
+.webdev-fab {
+    position: fixed;
+    bottom: 28px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.webdev-fab:hover {
+    transform: translateY(-3px) scale(1.04);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.webdev-fab svg,
+.webdev-fab-text {
+    color: white;
+}
+
+.webdev-fab-text {
+    font-weight: 600;
+    font-size: 0.82em;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+body.light-theme .webdev-fab {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: var(--light-card-border);
+    box-shadow: 0 4px 16px var(--light-shadow);
+}
+
+body.light-theme .webdev-fab:hover {
+    background: white;
+    border-color: var(--light-accent);
+}
+
+body.light-theme .webdev-fab svg,
+body.light-theme .webdev-fab-text {
+    color: var(--light-accent);
+}
+
+@media (max-width: 600px) {
+    .webdev-fab { bottom: 20px; right: 16px; padding: 10px 14px; }
+    .webdev-fab-text { font-size: 0.76em; }
+}
+
 /* Text Colors */
 .text-color {
     color: white;
