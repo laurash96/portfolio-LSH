@@ -731,6 +731,173 @@ body.light-theme .certification-badge-img {
     object-fit: cover;
     object-position: top;
     aspect-ratio: 16 / 10;
+    cursor: pointer;
+}
+
+.project-thumb-wrap {
+    position: relative;
+    width: calc(100% + 40px);
+    margin: -20px -20px 15px;
+    cursor: pointer;
+}
+
+.project-thumb-wrap .project-thumb {
+    width: 100%;
+    margin: 0;
+}
+
+.project-thumb-hint {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+.project-thumb-wrap:hover .project-thumb-hint {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (hover: none) {
+    .project-thumb-hint {
+        opacity: 1;
+        transform: translateY(0);
+        bottom: 8px;
+        right: 8px;
+    }
+}
+
+/* Gallery lightbox */
+.gallery-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(10, 10, 15, 0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.gallery-overlay.open {
+    display: flex;
+}
+
+.gallery-box {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-image-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-image-wrap img {
+    max-width: 100%;
+    max-height: 76vh;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.gallery-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.gallery-close:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-arrow:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.gallery-arrow.prev { left: -10px; }
+.gallery-arrow.next { right: -10px; }
+
+@media (max-width: 700px) {
+    .gallery-arrow.prev { left: 4px; }
+    .gallery-arrow.next { right: 4px; }
+    .gallery-close { top: -44px; right: 4px; }
+}
+
+.gallery-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.gallery-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s ease;
+}
+
+.gallery-dot.active {
+    background: white;
+}
+
+.gallery-caption {
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.85rem;
+    text-align: center;
 }
 
 .project-card:hover {
