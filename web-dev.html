@@ -329,6 +329,12 @@
 
     <!-- Translations -->
     <script>
+        // Reloading should start at the top, not wherever the scroll was left.
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
         const translations = {
             en: {
                 'back-link': '← Back to ML portfolio',
